@@ -1,0 +1,106 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 235px;
+  background-color: $header_color;
+  position: relative;
+  
+
+  &__left {
+    padding-top: 18px;
+    padding-bottom: 19px;
+   
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    &__logo {
+      width: 26.002px;
+      height: 26.792px;
+      flex-shrink: 0;
+    }
+  }
+  &__search {
+    width: 26.002px;
+    height: 26.792px;
+    flex-shrink: 0;
+    color: #e8e8e8;
+  }
+
+  // правое меню с вложенностью
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+ 
+  }
+
+  #burger {
+    position: absolute;
+    left: -99999px;
+    visibility: hidden;
+    
+
+    &:checked ~ .slide-menu {
+      right: 0;
+    }
+  }
+
+  .slide-menu {
+    background: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 232px;
+    padding: 32px;
+    position: absolute;
+    // z-index: 7;
+    top: 82px;
+    right: -250px;
+    transition: right 0.3s;
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__heading {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: $main_color;
+      padding-bottom: 24px;
+    }
+
+    &__link {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #6f6e6e;
+      transition: 0.3s;
+
+      &:hover {
+        color: $main_color;
+      }
+    }
+
+    &__title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $main_color;
+    }
+
+    &__list {
+      list-style-type: none;
+      padding-left: 21px;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin-top: 12px;
+    }
+  }
+}
+

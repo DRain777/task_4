@@ -1,0 +1,41 @@
+.socials-box {
+  background-color: $header_color;
+
+  padding: 24px 230px 23px 235px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    color: #fbfbfb;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  &__contacts-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+}
+
+
+.socials-box__contacts-icon:hover{
+    background-color: $main_color;
+
+
+
+}
